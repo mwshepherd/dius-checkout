@@ -6,11 +6,11 @@ interface Discount {
   apply?: (co: Checkout) => void;
 }
 
-type CheckoutItem = {
+interface CheckoutItem {
   sku: string;
   name: string;
   price: number;
-};
+}
 
 interface CheckoutDiscount {
   name: string;
